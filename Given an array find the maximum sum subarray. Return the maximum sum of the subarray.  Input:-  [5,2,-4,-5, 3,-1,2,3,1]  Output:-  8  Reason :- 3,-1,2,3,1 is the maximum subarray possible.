@@ -1,0 +1,20 @@
+function find_maximum_subarray(arr,length){
+    /*write the code to find the maximum subarray sum
+    only return the maximum sum of the subarray . 
+    Both array and size of array is given */
+let max=arr[0];
+
+for (let i=0; i<arr.length; i++) {
+    
+    for (let j=i+1; j<arr.length; j++) {
+        let sum=0;
+        for (let k=i; k<=j; k++) {
+            sum=sum+arr[k];
+        }
+        if (max<sum) {
+            max=sum;
+        }
+    }
+}
+        return (max); 
+}
