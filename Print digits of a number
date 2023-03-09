@@ -1,0 +1,6 @@
+while (n>0) {
+        console.log(n%10);
+        let x= Math.floor(n/10);
+        n=x;
+    
+    }
